@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 아침 햇살 배경 -->
+  <defs>
+    <linearGradient id="morning" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE5B4"/>
+      <stop offset="100%" stop-color="#F4F4F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="url(#morning)"/>
+  <rect y="350" width="800" height="150" fill="#A89070"/>
+  
+  <!-- 창문 (밝은 아침, 설경) -->
+  <rect x="500" y="60" width="240" height="220" fill="#5A7BAF"/>
+  <rect x="510" y="70" width="220" height="200" fill="#D4E8F5"/>
+  <line x1="620" y1="70" x2="620" y2="270" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="510" y1="170" x2="730" y2="170" stroke="#FFFFFF" stroke-width="4"/>
+  
+  <!-- 창밖 설경 -->
+  <rect x="510" y="220" width="220" height="50" fill="#FFFFFF"/>
+  <!-- 멀리 보이는 집 -->
+  <rect x="540" y="180" width="40" height="40" fill="#C9A57B"/>
+  <path d="M 535 180 L 560 165 L 585 180 Z" fill="#8B5A3C"/>
+  <rect x="640" y="190" width="35" height="30" fill="#A88660"/>
+  <path d="M 635 190 L 657 175 L 680 190 Z" fill="#8B5A3C"/>
+  <!-- 해 -->
+  <circle cx="690" cy="110" r="22" fill="#FFE066" opacity="0.9"/>
+  <circle cx="690" cy="110" r="15" fill="#FFF4B0"/>
+  
+  <!-- 부엌 싱크대 -->
+  <rect x="80" y="280" width="380" height="100" fill="#D4D4D4"/>
+  <rect x="80" y="280" width="380" height="15" fill="#B8B8B8"/>
+  <!-- 싱크볼 -->
+  <rect x="120" y="295" width="180" height="80" rx="5" fill="#9A9A9A"/>
+  <rect x="125" y="300" width="170" height="70" rx="5" fill="#7A7A7A"/>
+  <!-- 배수구 -->
+  <circle cx="210" cy="345" r="10" fill="#3A3A3A"/>
+  
+  <!-- 수도꼭지 -->
+  <rect x="200" y="220" width="20" height="60" fill="#C0C0C0"/>
+  <rect x="180" y="215" width="60" height="12" rx="2" fill="#A0A0A0"/>
+  <rect x="195" y="200" width="30" height="20" rx="3" fill="#C0C0C0"/>
+  <!-- 손잡이 -->
+  <circle cx="210" cy="195" r="12" fill="#0B3D91"/>
+  <rect x="207" y="180" width="6" height="20" fill="#0B3D91"/>
+  
+  <!-- 얼음 (수도꼭지 주변, 동파 표시) -->
+  <g fill="#A8D0F0" opacity="0.8">
+    <path d="M 195 240 L 200 250 L 192 255 Z"/>
+    <path d="M 220 245 L 228 252 L 222 260 Z"/>
+    <path d="M 200 265 L 207 273 L 198 278 Z"/>
+    <path d="M 215 263 L 222 272 L 216 280 Z"/>
+  </g>
+  <!-- 고드름 -->
+  <path d="M 198 240 L 200 260 L 202 240 Z" fill="#A8D0F0" stroke="#FFFFFF" stroke-width="0.5"/>
+  <path d="M 218 240 L 220 258 L 222 240 Z" fill="#A8D0F0" stroke="#FFFFFF" stroke-width="0.5"/>
+  <path d="M 208 240 L 210 265 L 212 240 Z" fill="#A8D0F0" stroke="#FFFFFF" stroke-width="0.5"/>
+  
+  <!-- 경고 표시 (얼어붙음) -->
+  <g transform="translate(280, 200)">
+    <circle r="22" fill="#E63946" stroke="#FFFFFF" stroke-width="2"/>
+    <text y="6" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="22" font-weight="bold">❄</text>
+  </g>
+  
+  <!-- 휴대폰 (휴교 알림) -->
+  <rect x="380" y="240" width="50" height="80" rx="6" fill="#2A2A2A"/>
+  <rect x="384" y="248" width="42" height="64" fill="#FFFFFF"/>
+  <text x="405" y="270" text-anchor="middle" fill="#0B3D91" font-family="sans-serif" font-size="7" font-weight="bold">학교</text>
+  <text x="405" y="282" text-anchor="middle" fill="#E63946" font-family="sans-serif" font-size="6" font-weight="bold">휴교</text>
+  <rect x="388" y="290" width="34" height="3" fill="#A8D0F0"/>
+  <rect x="388" y="296" width="28" height="3" fill="#A8D0F0"/>
+  <rect x="388" y="302" width="32" height="3" fill="#A8D0F0"/>
+  
+  <!-- 시계 -->
+  <circle cx="400" cy="100" r="35" fill="#FFFFFF" stroke="#0B3D91" stroke-width="3"/>
+  <line x1="400" y1="100" x2="400" y2="75" stroke="#0B3D91" stroke-width="3"/>
+  <line x1="400" y1="100" x2="420" y2="92" stroke="#E63946" stroke-width="2"/>
+  <circle cx="400" cy="100" r="3" fill="#0B3D91"/>
+  <text x="400" y="155" text-anchor="middle" fill="#0B3D91" font-family="sans-serif" font-size="13" font-weight="bold">AM 8:00</text>
+</svg>

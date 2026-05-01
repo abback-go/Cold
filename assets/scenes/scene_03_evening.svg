@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 어두워진 벽 -->
+  <rect width="800" height="350" fill="#D4C4A8"/>
+  <!-- 바닥 -->
+  <rect y="350" width="800" height="150" fill="#8B6F47"/>
+  
+  <!-- 창문 (밤, 폭설) -->
+  <rect x="60" y="80" width="200" height="180" fill="#2A3550"/>
+  <rect x="68" y="88" width="184" height="164" fill="#3D4A6B"/>
+  <line x1="160" y1="88" x2="160" y2="252" stroke="#5A6B85" stroke-width="3"/>
+  <line x1="68" y1="170" x2="252" y2="170" stroke="#5A6B85" stroke-width="3"/>
+  <!-- 창밖 폭설 -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="90" cy="110" r="3"/>
+    <circle cx="130" cy="140" r="2.5"/>
+    <circle cx="180" cy="100" r="3"/>
+    <circle cx="220" cy="130" r="2.5"/>
+    <circle cx="240" cy="180" r="3"/>
+    <circle cx="100" cy="200" r="2.5"/>
+    <circle cx="140" cy="220" r="3"/>
+    <circle cx="190" cy="200" r="2"/>
+    <circle cx="80" cy="160" r="2.5"/>
+    <circle cx="200" cy="240" r="2"/>
+    <circle cx="160" cy="120" r="2"/>
+    <circle cx="120" cy="180" r="2"/>
+  </g>
+  
+  <!-- 천장 전등 (깜빡임 효과) -->
+  <line x1="500" y1="0" x2="500" y2="60" stroke="#2A2A2A" stroke-width="3"/>
+  <ellipse cx="500" cy="80" rx="50" ry="20" fill="#5A4A3A"/>
+  <ellipse cx="500" cy="78" rx="46" ry="16" fill="#F4E8D8"/>
+  <!-- 빛 (희미함) -->
+  <ellipse cx="500" cy="90" rx="120" ry="60" fill="#F4E8B0" opacity="0.4"/>
+  <ellipse cx="500" cy="90" rx="80" ry="40" fill="#F4E8B0" opacity="0.3"/>
+  <!-- 깜빡임 표시 -->
+  <text x="580" y="80" fill="#E63946" font-family="sans-serif" font-size="24" font-weight="bold">⚡</text>
+  
+  <!-- 식탁 -->
+  <rect x="350" y="320" width="380" height="20" fill="#5A4A3A"/>
+  <rect x="370" y="340" width="15" height="100" fill="#5A4A3A"/>
+  <rect x="700" y="340" width="15" height="100" fill="#5A4A3A"/>
+  
+  <!-- 식탁 위 음식 -->
+  <!-- 밥그릇 -->
+  <ellipse cx="430" cy="320" rx="35" ry="10" fill="#FFFFFF"/>
+  <path d="M 395 320 Q 395 305, 430 305 Q 465 305, 465 320 Z" fill="#FFFFFF"/>
+  <ellipse cx="430" cy="307" rx="30" ry="6" fill="#F4F4F4"/>
+  <!-- 김 -->
+  <path d="M 420 295 Q 425 285, 420 280" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M 435 295 Q 440 285, 435 280" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- 국그릇 -->
+  <ellipse cx="540" cy="320" rx="40" ry="10" fill="#5A4A3A"/>
+  <path d="M 500 320 Q 500 302, 540 302 Q 580 302, 580 320 Z" fill="#5A4A3A"/>
+  <ellipse cx="540" cy="304" rx="35" ry="6" fill="#C9663C"/>
+  <!-- 김 -->
+  <path d="M 525 290 Q 530 280, 525 270" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 555 290 Q 560 280, 555 270" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- 반찬 그릇들 -->
+  <ellipse cx="630" cy="320" rx="25" ry="6" fill="#FFFFFF"/>
+  <ellipse cx="630" cy="316" rx="22" ry="4" fill="#3A8B3A"/>
+  
+  <ellipse cx="690" cy="320" rx="22" ry="6" fill="#FFFFFF"/>
+  <ellipse cx="690" cy="316" rx="19" ry="4" fill="#E63946"/>
+  
+  <!-- 휴대폰 (식탁 위) -->
+  <rect x="380" y="324" width="40" height="60" rx="4" fill="#2A2A2A"/>
+  <rect x="384" y="330" width="32" height="48" fill="#A8D0F0"/>
+  
+  <!-- 의자 (실루엣) -->
+  <rect x="400" y="400" width="80" height="80" fill="#5A4A3A" opacity="0.7"/>
+  <rect x="400" y="350" width="80" height="55" fill="#5A4A3A" opacity="0.7"/>
+  
+  <!-- 시계 (8시 표시) -->
+  <circle cx="700" cy="100" r="35" fill="#FFFFFF" stroke="#0B3D91" stroke-width="3"/>
+  <line x1="700" y1="100" x2="700" y2="78" stroke="#0B3D91" stroke-width="3"/>
+  <line x1="700" y1="100" x2="722" y2="100" stroke="#E63946" stroke-width="2"/>
+  <circle cx="700" cy="100" r="3" fill="#0B3D91"/>
+  <text x="700" y="155" text-anchor="middle" fill="#0B3D91" font-family="sans-serif" font-size="12" font-weight="bold">PM 8:00</text>
+</svg>

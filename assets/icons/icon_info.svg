@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- 안테나 기둥 -->
+  <rect x="62" y="50" width="4" height="55" fill="#0B3D91"/>
+  <!-- 안테나 받침 -->
+  <rect x="48" y="100" width="32" height="8" rx="2" fill="#0B3D91"/>
+  <!-- 신호 송출원 -->
+  <circle cx="64" cy="48" r="6" fill="#E63946"/>
+  <!-- 신호 파동 1 (좌) -->
+  <path d="M 50 30 Q 38 48, 50 66" stroke="#4A90E2" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 40 22 Q 22 48, 40 74" stroke="#4A90E2" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- 신호 파동 2 (우) -->
+  <path d="M 78 30 Q 90 48, 78 66" stroke="#4A90E2" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 88 22 Q 106 48, 88 74" stroke="#4A90E2" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+</svg>

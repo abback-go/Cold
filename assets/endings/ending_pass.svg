@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 부드러운 배경 -->
+  <defs>
+    <linearGradient id="passgrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A8D0F0"/>
+      <stop offset="100%" stop-color="#E8F0F8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#passgrad)"/>
+  <rect y="380" width="800" height="120" fill="#C8B89A"/>
+  
+  <!-- 체크 마크 (큰) -->
+  <g transform="translate(400, 130)">
+    <circle r="60" fill="#4A90E2" stroke="#0B3D91" stroke-width="4"/>
+    <path d="M -25 5 L -5 25 L 30 -15" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- 안도하는 플레이어 -->
+  <g transform="translate(330, 290)">
+    <!-- 머리 -->
+    <circle r="32" fill="#F4D5B5"/>
+    <path d="M -27 -10 Q -27 -28, 0 -28 Q 27 -28, 27 -10 Q 27 -22, 0 -25 Q -27 -22, -27 -10 Z" fill="#3D2817"/>
+    <!-- 안도의 눈 (감김) -->
+    <path d="M -10 -2 Q -7 -5, -4 -2" stroke="#0B3D91" stroke-width="2" fill="none"/>
+    <path d="M 4 -2 Q 7 -5, 10 -2" stroke="#0B3D91" stroke-width="2" fill="none"/>
+    <!-- 미소 -->
+    <path d="M -10 14 Q 0 22, 10 14" stroke="#0B3D91" stroke-width="2" fill="none"/>
+    <!-- 볼 -->
+    <ellipse cx="-18" cy="8" rx="5" ry="3" fill="#FFB0B0" opacity="0.6"/>
+    <ellipse cx="18" cy="8" rx="5" ry="3" fill="#FFB0B0" opacity="0.6"/>
+    <!-- 한숨 표시 -->
+    <path d="M -8 -35 Q -10 -45, -5 -50" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.7"/>
+    <!-- 몸 -->
+    <path d="M -38 35 Q -38 100, -28 110 L 28 110 Q 38 100, 38 35 Z" fill="#0B3D91"/>
+  </g>
+  
+  <!-- 동생 (옆에서 따뜻한 음료) -->
+  <g transform="translate(490, 305)">
+    <circle r="26" fill="#F4D5B5"/>
+    <path d="M -22 -10 Q -22 -22, 0 -22 Q 22 -22, 22 -10 Q 22 -18, 0 -20 Q -22 -18, -22 -10 Z" fill="#3D2817"/>
+    <circle cx="-7" cy="-2" r="2" fill="#0B3D91"/>
+    <circle cx="7" cy="-2" r="2" fill="#0B3D91"/>
+    <path d="M -7 12 Q 0 18, 7 12" stroke="#0B3D91" stroke-width="2" fill="none"/>
+    <ellipse cx="-13" cy="6" rx="4" ry="3" fill="#FFB0B0" opacity="0.6"/>
+    <ellipse cx="13" cy="6" rx="4" ry="3" fill="#FFB0B0" opacity="0.6"/>
+    <!-- 담요 -->
+    <path d="M -34 25 Q -34 95, -24 105 L 24 105 Q 34 95, 34 25 Z" fill="#A8D0F0"/>
+    <!-- 머그컵 -->
+    <rect x="-12" y="40" width="22" height="20" rx="2" fill="#FFFFFF" stroke="#0B3D91" stroke-width="1.5"/>
+    <path d="M 10 45 Q 16 45, 16 50 Q 16 55, 10 55" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+    <!-- 김 -->
+    <path d="M -3 38 Q -1 30, -3 22" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M 4 38 Q 6 30, 4 22" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+  
+  <!-- 텍스트 -->
+  <text x="400" y="445" text-anchor="middle" fill="#0B3D91" font-family="sans-serif" font-size="36" font-weight="bold">무사 통과</text>
+  <text x="400" y="473" text-anchor="middle" fill="#5A4A3A" font-family="sans-serif" font-size="16">위기를 잘 넘겼어요. 더 나은 대처를 알아봅시다</text>
+</svg>

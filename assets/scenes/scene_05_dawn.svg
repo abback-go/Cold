@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 매우 어두운 새벽 배경 -->
+  <rect width="800" height="500" fill="#0F1525"/>
+  <!-- 바닥 -->
+  <rect y="380" width="800" height="120" fill="#080B14"/>
+  
+  <!-- 창밖 (새벽, 더 어두움) -->
+  <rect x="40" y="50" width="180" height="200" fill="#050810"/>
+  <rect x="48" y="58" width="164" height="184" fill="#0F1525"/>
+  <line x1="130" y1="58" x2="130" y2="242" stroke="#1F2A40" stroke-width="2"/>
+  <line x1="48" y1="150" x2="212" y2="150" stroke="#1F2A40" stroke-width="2"/>
+  <!-- 눈 -->
+  <g fill="#FFFFFF" opacity="0.4">
+    <circle cx="80" cy="90" r="2"/>
+    <circle cx="140" cy="120" r="2"/>
+    <circle cx="180" cy="100" r="2"/>
+    <circle cx="100" cy="180" r="2"/>
+    <circle cx="160" cy="200" r="2"/>
+  </g>
+  
+  <!-- 손전등 빛 (약하게) -->
+  <defs>
+    <radialGradient id="flashlight2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4B0" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#FFE066" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFE066" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="450" cy="320" rx="220" ry="130" fill="url(#flashlight2)"/>
+  
+  <!-- 동생 (담요로 감싸짐, 창백한 표정) -->
+  <!-- 담요 -->
+  <ellipse cx="450" cy="380" rx="120" ry="40" fill="#4A5A75"/>
+  <path d="M 340 360 Q 340 320, 380 310 L 520 310 Q 560 320, 560 360 L 560 400 L 340 400 Z" fill="#5A6B85"/>
+  
+  <!-- 동생 머리 (창백) -->
+  <circle cx="450" cy="290" r="28" fill="#D4C4B0"/>
+  <path d="M 425 285 Q 425 270, 450 270 Q 475 270, 475 285 Q 475 273, 450 271 Q 425 273, 425 285 Z" fill="#3D2817"/>
+  
+  <!-- 눈 (힘없음) -->
+  <path d="M 438 290 Q 442 288, 446 290" stroke="#0B3D91" stroke-width="2" fill="none"/>
+  <path d="M 454 290 Q 458 288, 462 290" stroke="#0B3D91" stroke-width="2" fill="none"/>
+  <!-- 입 (아픔) -->
+  <path d="M 442 305 Q 450 302, 458 305" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <!-- 볼 (창백한 푸른빛) -->
+  <ellipse cx="430" cy="298" rx="6" ry="4" fill="#A8D0F0" opacity="0.5"/>
+  <ellipse cx="470" cy="298" rx="6" ry="4" fill="#A8D0F0" opacity="0.5"/>
+  
+  <!-- 동생의 손 (동상 부위 강조) -->
+  <ellipse cx="380" cy="370" rx="22" ry="16" fill="#D4C4B0"/>
+  <!-- 손가락 -->
+  <ellipse cx="365" cy="365" rx="3" ry="8" fill="#A8C8E0" transform="rotate(-20 365 365)"/>
+  <ellipse cx="372" cy="358" rx="3" ry="9" fill="#A8C8E0" transform="rotate(-10 372 358)"/>
+  <ellipse cx="380" cy="355" rx="3" ry="9" fill="#A8C8E0"/>
+  <ellipse cx="388" cy="358" rx="3" ry="9" fill="#A8C8E0" transform="rotate(10 388 358)"/>
+  <!-- 동상 강조 표시 (얼음/푸른빛) -->
+  <circle cx="375" cy="358" r="3" fill="#A8D0F0" opacity="0.8"/>
+  <circle cx="385" cy="362" r="2" fill="#A8D0F0" opacity="0.8"/>
+  
+  <!-- 경고 표시 -->
+  <g transform="translate(310, 320)">
+    <path d="M 0 0 L 30 -45 L 60 0 Z" fill="#E63946" stroke="#FFFFFF" stroke-width="2"/>
+    <rect x="28" y="-30" width="4" height="18" fill="#FFFFFF"/>
+    <circle cx="30" cy="-7" r="2.5" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- 플레이어 (걱정스러운 모습, 옆에서 바라봄) -->
+  <circle cx="600" cy="290" r="24" fill="#D4C4B0"/>
+  <path d="M 580 285 Q 580 270, 600 270 Q 620 270, 620 285" fill="#3D2817"/>
+  <!-- 걱정스러운 눈 -->
+  <path d="M 588 292 Q 592 288, 596 292" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <path d="M 604 292 Q 608 288, 612 292" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <!-- 입 (걱정) -->
+  <path d="M 593 308 Q 600 312, 607 308" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <!-- 몸 -->
+  <path d="M 575 315 Q 575 380, 585 395 L 615 395 Q 625 380, 625 315 Z" fill="#3D4A6B"/>
+  
+  <!-- 시계 (새벽 3시) -->
+  <circle cx="700" cy="100" r="32" fill="#0F1525" stroke="#5A6B85" stroke-width="2"/>
+  <line x1="700" y1="100" x2="700" y2="78" stroke="#5A6B85" stroke-width="2"/>
+  <line x1="700" y1="100" x2="685" y2="100" stroke="#E63946" stroke-width="2"/>
+  <circle cx="700" cy="100" r="2.5" fill="#E63946"/>
+  <text x="700" y="148" text-anchor="middle" fill="#5A6B85" font-family="sans-serif" font-size="11" font-weight="bold">AM 3:00</text>
+  
+  <!-- 온도 표시 -->
+  <rect x="640" y="180" width="120" height="40" rx="5" fill="#0F1525" stroke="#E63946" stroke-width="2"/>
+  <text x="700" y="207" text-anchor="middle" fill="#E63946" font-family="monospace" font-size="20" font-weight="bold">-17°C</text>
+</svg>

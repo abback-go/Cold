@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- 지붕 -->
+  <path d="M 20 60 L 64 24 L 108 60 Z" fill="#E63946"/>
+  <!-- 본체 -->
+  <rect x="32" y="60" width="64" height="48" fill="#F4A261"/>
+  <!-- 문 -->
+  <rect x="56" y="78" width="16" height="30" fill="#0B3D91"/>
+  <circle cx="68" cy="94" r="1.5" fill="#F4A261"/>
+  <!-- 창문 -->
+  <rect x="40" y="70" width="12" height="12" fill="#A8D0F0" stroke="#0B3D91" stroke-width="1.5"/>
+  <rect x="76" y="70" width="12" height="12" fill="#A8D0F0" stroke="#0B3D91" stroke-width="1.5"/>
+  <!-- 굴뚝 연기 -->
+  <rect x="80" y="32" width="8" height="14" fill="#0B3D91"/>
+  <circle cx="84" cy="22" r="4" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="90" cy="14" r="3" fill="#FFFFFF" opacity="0.6"/>
+</svg>

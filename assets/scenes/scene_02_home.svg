@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 거실 벽 -->
+  <rect width="800" height="350" fill="#F4E8D8"/>
+  <!-- 바닥 -->
+  <rect y="350" width="800" height="150" fill="#C9A57B"/>
+  <!-- 바닥 무늬 -->
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#A88660" stroke-width="1"/>
+  <line x1="0" y1="430" x2="800" y2="430" stroke="#A88660" stroke-width="1"/>
+  <line x1="0" y1="480" x2="800" y2="480" stroke="#A88660" stroke-width="1"/>
+  
+  <!-- 베란다 창문 (살짝 열린) -->
+  <rect x="500" y="80" width="240" height="240" fill="#5A7BAF"/>
+  <rect x="510" y="90" width="220" height="220" fill="#A8D0F0"/>
+  <!-- 창틀 -->
+  <line x1="620" y1="90" x2="620" y2="310" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="510" y1="200" x2="730" y2="200" stroke="#FFFFFF" stroke-width="4"/>
+  <!-- 열린 부분 강조 -->
+  <rect x="620" y="90" width="40" height="220" fill="#3D5A85" opacity="0.3"/>
+  <!-- 바람 표시 -->
+  <path d="M 660 150 Q 670 155, 660 160" stroke="#A8D0F0" stroke-width="2" fill="none"/>
+  <path d="M 670 180 Q 685 185, 670 190" stroke="#A8D0F0" stroke-width="2" fill="none"/>
+  <path d="M 660 220 Q 675 225, 660 230" stroke="#A8D0F0" stroke-width="2" fill="none"/>
+  <!-- 창밖 눈 -->
+  <g fill="#FFFFFF">
+    <circle cx="540" cy="120" r="2"/>
+    <circle cx="580" cy="160" r="2.5"/>
+    <circle cx="700" cy="140" r="2"/>
+    <circle cx="710" cy="240" r="2.5"/>
+    <circle cx="540" cy="270" r="2"/>
+  </g>
+  
+  <!-- 소파 -->
+  <rect x="80" y="280" width="280" height="80" rx="10" fill="#8B6F47"/>
+  <rect x="90" y="240" width="40" height="50" rx="8" fill="#8B6F47"/>
+  <rect x="310" y="240" width="40" height="50" rx="8" fill="#8B6F47"/>
+  <rect x="100" y="270" width="220" height="20" rx="5" fill="#A88660"/>
+  
+  <!-- 동생 (소파에 앉음) -->
+  <!-- 머리 -->
+  <circle cx="200" cy="240" r="20" fill="#F4D5B5"/>
+  <!-- 머리카락 -->
+  <path d="M 182 230 Q 182 218, 200 218 Q 218 218, 218 230 Q 218 222, 200 220 Q 182 222, 182 230 Z" fill="#3D2817"/>
+  <!-- 눈 (떨고 있는 표정) -->
+  <path d="M 190 240 Q 192 238, 194 240" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <path d="M 206 240 Q 208 238, 210 240" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <!-- 입 (떨림) -->
+  <path d="M 194 252 L 198 250 L 202 252 L 206 250" stroke="#0B3D91" stroke-width="1.5" fill="none"/>
+  <!-- 몸 (담요 두름) -->
+  <path d="M 165 260 Q 165 320, 175 330 L 225 330 Q 235 320, 235 260 Z" fill="#A8D0F0"/>
+  <!-- 떨림 표시 -->
+  <text x="240" y="240" fill="#4A90E2" font-family="sans-serif" font-size="20" font-weight="bold">~</text>
+  <text x="155" y="245" fill="#4A90E2" font-family="sans-serif" font-size="20" font-weight="bold">~</text>
+  
+  <!-- 게임기 (작은 휴대용) -->
+  <rect x="185" y="295" width="30" height="20" rx="2" fill="#2A2A2A"/>
+  <rect x="188" y="298" width="24" height="14" fill="#A8D0F0"/>
+  
+  <!-- 보일러 컨트롤러 (벽에 설치) -->
+  <rect x="50" y="120" width="60" height="80" rx="6" fill="#FFFFFF" stroke="#0B3D91" stroke-width="2"/>
+  <rect x="58" y="130" width="44" height="22" fill="#2A2A2A"/>
+  <text x="80" y="146" text-anchor="middle" fill="#E63946" font-family="monospace" font-size="11" font-weight="bold">OFF</text>
+  <circle cx="68" cy="170" r="4" fill="#A8D0F0"/>
+  <circle cx="80" cy="170" r="4" fill="#A8D0F0"/>
+  <circle cx="92" cy="170" r="4" fill="#A8D0F0"/>
+  <rect x="62" y="182" width="36" height="10" rx="2" fill="#A8D0F0"/>
+  
+  <!-- 식탁 위 시계 -->
+  <rect x="400" y="350" width="80" height="120" rx="3" fill="#5A4A3A"/>
+  <circle cx="440" cy="395" r="22" fill="#FFFFFF" stroke="#0B3D91" stroke-width="2"/>
+  <line x1="440" y1="395" x2="440" y2="380" stroke="#0B3D91" stroke-width="2"/>
+  <line x1="440" y1="395" x2="455" y2="395" stroke="#E63946" stroke-width="1.5"/>
+</svg>
