@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="중학생을 위한 한파 재난 대응 교육 게임" />
+  <meta name="theme-color" content="#0B3D91" />
+  <title>콜드 서바이벌: 한파 72시간</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main id="app" class="app">
+
+    <!-- 타이틀 화면 -->
+    <section id="screen-title" class="screen screen-title is-active" aria-label="시작 화면">
+      <img src="assets/ui/logo_game.svg" alt="콜드 서바이벌 로고" class="title-logo" />
+      <h1 class="title-heading">콜드 서바이벌<br /><span class="title-sub">한파 72시간</span></h1>
+      <p class="title-desc">
+        한파 특보가 내려진 어느 금요일 오후.<br />
+        부모님은 직장에 계시고, 너는 초등학생 동생과 함께 있다.<br />
+        다음 24시간, 너의 선택이 가족을 지킨다.
+      </p>
+      <button id="btn-start" type="button" class="btn btn-primary btn-lg">게임 시작</button>
+      <p class="title-meta">중학생 대상 · 약 15분 소요 · 모바일 지원</p>
+    </section>
+
+    <!-- 게임 화면 -->
+    <section id="screen-game" class="screen screen-game" aria-label="게임 화면" hidden>
+
+      <!-- 상단: 4개 지표 게이지 -->
+      <header class="meters" aria-label="현재 상태 지표">
+        <div class="meter" data-key="temp">
+          <img src="assets/icons/icon_temp.svg" alt="" class="meter-icon" />
+          <div class="meter-body">
+            <div class="meter-label"><span class="meter-name">체온</span><span class="meter-value" data-value="temp">100</span></div>
+            <div class="meter-bar"><div class="meter-fill" data-fill="temp"></div></div>
+          </div>
+        </div>
+        <div class="meter" data-key="sibling">
+          <img src="assets/icons/icon_sibling.svg" alt="" class="meter-icon" />
+          <div class="meter-body">
+            <div class="meter-label"><span class="meter-name">동생 안전도</span><span class="meter-value" data-value="sibling">100</span></div>
+            <div class="meter-bar"><div class="meter-fill" data-fill="sibling"></div></div>
+          </div>
+        </div>
+        <div class="meter" data-key="info">
+          <img src="assets/icons/icon_info.svg" alt="" class="meter-icon" />
+          <div class="meter-body">
+            <div class="meter-label"><span class="meter-name">정보력</span><span class="meter-value" data-value="info">100</span></div>
+            <div class="meter-bar"><div class="meter-fill" data-fill="info"></div></div>
+          </div>
+        </div>
+        <div class="meter" data-key="house">
+          <img src="assets/icons/icon_house.svg" alt="" class="meter-icon" />
+          <div class="meter-body">
+            <div class="meter-label"><span class="meter-name">집 상태</span><span class="meter-value" data-value="house">100</span></div>
+            <div class="meter-bar"><div class="meter-fill" data-fill="house"></div></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 중앙: 장면 -->
+      <article class="scene" aria-live="polite">
+        <div class="scene-header">
+          <h2 class="scene-title" id="scene-title">장면 제목</h2>
+          <div class="scene-time">
+            <img src="assets/icons/icon_clock.svg" alt="" class="scene-time-icon" />
+            <span id="scene-time">시간</span>
+          </div>
+        </div>
+        <figure class="scene-figure">
+          <img id="scene-image" src="assets/scenes/scene_01_school.svg" alt="" class="scene-image" />
+        </figure>
+        <p id="scene-narrative" class="scene-narrative">장면 묘사</p>
+
+        <!-- 선택지 -->
+        <div id="choices" class="choices" role="group" aria-label="선택지"></div>
+
+        <!-- 피드백 (선택 후 표시) -->
+        <div id="feedback" class="feedback" hidden>
+          <div class="feedback-header">
+            <img id="feedback-icon" src="assets/icons/icon_check.svg" alt="" class="feedback-icon" />
+            <span id="feedback-title" class="feedback-title">정답!</span>
+          </div>
+          <p id="feedback-text" class="feedback-text"></p>
+          <ul id="feedback-effects" class="feedback-effects"></ul>
+          <button id="btn-next" type="button" class="btn btn-primary">다음으로</button>
+        </div>
+      </article>
+
+      <footer class="game-footer">
+        <span class="progress-label">진행</span>
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+        <span id="progress-count" class="progress-count">1 / 6</span>
+      </footer>
+    </section>
+
+    <!-- 엔딩 화면 -->
+    <section id="screen-ending" class="screen screen-ending" aria-label="엔딩 화면" hidden>
+      <figure class="ending-figure">
+        <img id="ending-image" src="assets/endings/ending_master.svg" alt="" class="ending-image" />
+      </figure>
+      <h2 id="ending-title" class="ending-title">생존 마스터</h2>
+      <p id="ending-summary" class="ending-summary">합산 점수에 따른 요약</p>
+      <div class="ending-score">
+        <span class="ending-score-label">최종 점수</span>
+        <span id="ending-score-value" class="ending-score-value">0</span>
+        <span class="ending-score-max">/ 400</span>
+      </div>
+
+      <section class="report" aria-label="결과 리포트">
+        <h3 class="report-heading">한파 대비 체크리스트</h3>
+        <ul id="report-list" class="report-list"></ul>
+      </section>
+
+      <div class="ending-actions">
+        <button id="btn-restart" type="button" class="btn btn-primary">다시 플레이</button>
+        <button id="btn-share" type="button" class="btn btn-secondary">결과 공유 카드</button>
+      </div>
+
+      <p class="ending-source">
+        출처: 행정안전부 국민재난안전포털 한파 행동요령 · 한국전력 정전 신고 123 · 응급 119
+      </p>
+    </section>
+
+    <!-- 공유 카드 모달 -->
+    <div id="share-modal" class="modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+        <h3 id="share-modal-title" class="modal-title">한파 대비 체크리스트 카드</h3>
+        <div id="share-card" class="share-card"></div>
+        <div class="modal-actions">
+          <button id="btn-copy" type="button" class="btn btn-primary">텍스트 복사</button>
+          <button type="button" class="btn btn-secondary" data-close-modal>닫기</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
